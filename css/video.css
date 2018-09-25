@@ -1,0 +1,47 @@
+.video{
+    padding: 4rem 0rem;
+}
+.video__context{
+   text-align: center;
+   padding: 0rem 1rem;
+}
+.video__link{
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    border: 1px solid white;
+    border-radius: 0.4rem;
+    margin-bottom: 1rem;
+}
+.video__text{
+    text-shadow: 0 1px 3px rgba(25, 22, 24, 0.36);
+    color: white;
+    font-family: var(--main-font-family);
+    font-weight: 300;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+.video__text span{
+    font-weight: 700;
+}
+.video__subtext{
+    color: white;
+    font-family: var(--main-font-family);
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+@media (min-width: 760px){
+    .video{
+        padding: 5rem 0;
+    }
+    .video__context{
+        width: 70%;
+        margin: auto;
+        padding: 0;
+    }
+    .video__text{
+        font-size: 2rem;
+    }
+    .video__subtext{
+        font-size: 1.3rem;
+    }
+}

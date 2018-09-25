@@ -1,0 +1,35 @@
+.dowload{
+    padding: 3rem 0rem;
+}
+.dowload__text{
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.75px;
+    font-family: var(--main-font-family);
+    text-shadow: 0 1px 3px rgba(25, 22, 24, 0.36);
+    margin-bottom: 1.5rem;
+}
+.dowload__btn{
+    display: block;
+    padding: 0.6rem 1rem 0.8rem 1rem;
+    text-transform: uppercase;
+    border-radius: 0.3rem;
+    margin: auto;
+    color: black;
+    background-color: var(--color);
+    box-shadow: 0 -4px #277697 inset;
+    border: none;
+}
+@media(min-width: 760px){
+    .dowload{
+        padding: 4rem 0rem;
+    }
+    .dowload__text{
+        font-size: 2.3rem;
+        margin-bottom: 1.8rem;
+    }
+    .dowload__btn{
+        padding: 1rem 1.5rem 1rem 1.5rem;
+    }
+}

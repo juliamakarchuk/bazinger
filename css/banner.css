@@ -1,29 +1,31 @@
-
-.banner-section{
+.banner{
     position: relative;
-    padding: 4rem 1.25rem;
+}
+.banner-section{
+    padding: 4rem 1.35rem;
 }
 .banner-section__title{
     font-family: var(--main-font-family);
+    font-size: 1.8rem;
     margin-bottom: 1.3rem;
     text-align: center;
     color: white;
     font-weight: 300;
-    font-size: 1.5rem;
     text-shadow: 0 1px 3px rgba(25, 22, 24, 0.36);
 }
 .banner-section__title span{
     font-weight: 700;
 }
 .banner-section__text{
+    margin-bottom: 1.3rem;
     font-family: var(--main-font-family);
+    font-size: 1.1rem;
     text-align: center;
     color: white;
-    font-size: 1rem;
     font-weight: 300;
-    margin-bottom: 1.3rem;
 }
 .banner-section__btns{
+    font-size: 0;
     margin-bottom: 1.5rem;
     text-align: center;
 }
@@ -76,6 +78,7 @@
     position: absolute;
     bottom: 5%;
     left: 50%;
+    font-size: 0;
     transform: translateX(-50%);
 }
 .dots span{
@@ -85,6 +88,10 @@
     background-color: transparent;
     border: 1px solid white;
     border-radius: 50%;
+    margin-right: 0.5rem;
+}
+.dots span:last-child{
+    margin-right: 0rem;
 }
 .dots span:hover{
     background-color: var(--color);
@@ -114,4 +121,55 @@
     right: 0;
     background-image: url('../img/icon.png');
     transform: rotate(180deg);
+}
+@media (min-width: 760px){
+    .banner-section{
+        width: 80%;
+        padding: 7rem 0rem;
+        margin: auto;
+    }
+    .banner-section__title{
+        margin-bottom: 1.7rem;
+        font-size: 2.1rem;
+    }
+    .banner-section__text{
+        margin-bottom: 1.9rem;
+        font-size: 1.3rem;
+    }
+    .button{
+        padding: 0.9rem 1.4rem;
+        font-size: 1rem;
+    }
+    .button:first-child{
+        margin-right: 0.8rem;
+    }
+    .available-block__text{
+        font-size: 1.3rem;
+    }
+    .available-block__icon{
+        padding: 0.7rem 0.9rem;
+    }
+    .available-block__icon svg{
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+    .controller-block__icon{
+       padding: 0.4rem;
+       width: 2.5rem;
+       height: 2.5rem;
+    }
+    .dots span{
+        width: 1rem;
+        height: 1rem;
+    }
+}
+@media (min-width: 1040px){
+    .banner-section__title{
+        margin-bottom: 1.8rem;
+        font-size: 2.7rem;
+    }
+    .banner-section__text{
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+    }
 }

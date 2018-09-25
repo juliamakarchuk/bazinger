@@ -9,3 +9,23 @@
     background-position: top center;
     background-size: cover;
 }
+.wrapper--features,
+.wrapper--testimonials{
+    background-color: #f9f9f9;
+}
+.wrapper--video{
+    background-image: url(../img/wrapper--video.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-color: var(--color);
+}
+.wrapper--dowload,
+.wrapper--footer{
+    background-color: #414042;
+}
+.wrapper--contact{
+    background-image: url('../img/Map.png');
+    background-position: top center;
+    background-size: cover;
+}
