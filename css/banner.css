@@ -41,6 +41,8 @@
     font-family: var(--main-font-family);
     cursor: pointer;
     outline: none;
+    -webkit-transition: background-color linear 0.5s;
+    -o-transition: background-color linear 0.5s;
     transition: background-color linear 0.5s;
 }
 .button:first-child{
@@ -79,7 +81,9 @@
     bottom: 5%;
     left: 50%;
     font-size: 0;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
 }
 .dots span{
     display: inline-block;
@@ -120,7 +124,9 @@
     top:50%;
     right: 0;
     background-image: url('../img/icon.png');
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
 }
 @media (min-width: 760px){
     .banner-section{

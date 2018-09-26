@@ -10,10 +10,16 @@
     text-align: center;
     border: 1px solid #dad7d7;
     background-color: #f9f9f9;
+    -webkit-transition: scale ease-in-out 1s;
+    -o-transition: scale ease-in-out 1s;
     transition: scale ease-in-out 1s;
 }
 .price__block:hover{
-    transform: scale(1.07);
+    -webkit-transform: scale(1.07);
+        -ms-transform: scale(1.07);
+            transform: scale(1.07);
+    -webkit-transition: all ease-in-out 0.7s;
+    -o-transition: all ease-in-out 0.7s;
     transition: all ease-in-out 0.7s;
 }
 .price__block:last-child{
@@ -74,9 +80,14 @@
 }
 @media (min-width: 760px){
     .price__body{
+       display: -webkit-box;
+       display: -ms-flexbox;
        display: flex;
-       flex-wrap: wrap;
-       justify-content: space-between;
+       -ms-flex-wrap: wrap;
+           flex-wrap: wrap;
+       -webkit-box-pack: justify;
+           -ms-flex-pack: justify;
+               justify-content: space-between;
        padding: 0 2rem;
     }
     .price__block{

@@ -9,7 +9,8 @@ form{
     background-color: var(--color);
 }
 form:focus-within {
-    box-shadow: 0 0 4px 6px white;
+    -webkit-box-shadow: 0 0 4px 6px white;
+            box-shadow: 0 0 4px 6px white;
   }
 .contact__subtitle{
     text-align: center;
